@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import moment from 'moment';
+import EarthquakeInfo from './EarthquakeInfo.js';
+import EarthquakeList from './EarthquakeList.js';
 import '../styles/App.css';
 
 class App extends Component {
@@ -9,11 +12,9 @@ class App extends Component {
           <div className="my-header">
           Earthquake!
           </div>
-          <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <EarthquakeInfo />
+        <EarthquakeList />
       </div>
     );
   }
